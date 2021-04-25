@@ -1,0 +1,55 @@
+using System;
+					
+public class Program
+{
+	//METODO SUMA
+	static int suma(int num1, int num2)
+	{
+		return num1+num2;
+	}
+	//METODO RESTA
+	static int resta(int num1, int num2)
+	{
+		return num1-num2;
+	}
+	//METODO PRODUCTO
+	static int producto(int num1, int num2)
+	{
+		return num1*num2;
+	}
+	//METODO DIVISION
+	static decimal division(decimal num1, decimal num2)
+	{
+		return num1/num2;
+	}
+	public static void Main()
+	{	
+		
+		
+		Console.WriteLine("Ingrese la operación que desee realizar, expresado en letra minúscula");
+		string operacion=Console.ReadLine();
+		if(operacion=="suma"){
+				Console.WriteLine("1º Número, 2º Número");
+					int resultSuma = suma (Convert.ToInt32(Console.ReadLine()), (Convert.ToInt32(Console.ReadLine())));
+					Console.WriteLine("El resultado es: {0}", resultSuma);
+		}else if(operacion=="resta"){
+		//Console.WriteLine("ERROR");
+				Console.WriteLine("1º Número, 2º Número");
+					int resultResta = resta (Convert.ToInt32(Console.ReadLine()), (Convert.ToInt32(Console.ReadLine())));
+					Console.WriteLine("El resultado es: {0}", resultResta);
+		}else if(operacion=="producto"){
+				Console.WriteLine("1º Número, 2º Número");
+					int resultProducto = producto (Convert.ToInt32(Console.ReadLine()), (Convert.ToInt32(Console.ReadLine())));
+					Console.WriteLine("El resultado es: {0}", resultProducto);
+		
+		}else if(operacion=="division"){
+				Console.WriteLine("1º Número, 2º Número");
+					decimal resultDivision = division (Convert.ToInt32(Console.ReadLine()), (Convert.ToInt32(Console.ReadLine())));
+					Console.WriteLine("El resultado es: {0}", resultDivision);
+		
+		}else{
+		Console.WriteLine("Ingresaste una operación no válida para esta calculadora");
+		}
+		
+	}
+}
